@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work | Maison Fleur</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f3ee;
+      color: #4a4a4a;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .navbar {
+      background-color: #6e735f;
+    }
+
+    .navbar a {
+      color: #fff !important;
+    }
+
+    .gallery-section {
+      padding: 80px 20px;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: 0.4s;
+    }
+
+    .gallery-img:hover {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+      color: #fff;
+      border-radius: 0 0 15px 15px;
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .btn-custom {
+      border: 1px solid #6e735f;
+      color: #6e735f;
+      border-radius: 30px;
+      padding: 8px 20px;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand text-white" href="index.html">Maison Fleur</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="text-center py-5">
+  <h1>Our Work</h1>
+  <p>A glimpse into our floral stories and creations</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- ITEM -->
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="image/wedding.png" class="gallery-img">
+          <div class="overlay">Wedding Florals</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="image/styling.png" class="gallery-img">
+          <div class="overlay">Bouquet Styling</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="image/table.png" class="gallery-img">
+          <div class="overlay">Table Setup</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="image/event.jpeg" class="gallery-img">
+          <div class="overlay">Event Decor</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="image/everyday.jpeg" class="gallery-img">
+          <div class="overlay">Everyday Flowers</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="image/custom.jpeg" class="gallery-img">
+          <div class="overlay">Custom Installations</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="text-center mt-5">
+      <a href="quote.html" class="btn btn-custom">Work with us →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
